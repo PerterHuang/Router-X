@@ -10,6 +10,7 @@ RouterX is an enterprise-grade intelligent gateway system that provides an intui
 > 3. Supports protocols: SOCKS, Shadowsocks, Trojan, Hysteria2, L2TP, WireGuard
 > 4. Supports one-click import and export
 > 5. Prevents DNS leaks, suitable for cross-border e-commerce network isolation
+> 6. Cloud management supported — [https://cloud.router-x.top](https://cloud.router-x.top)
 
 ---
 
@@ -248,7 +249,6 @@ This firmware is **free for personal use**. For commercial use, please contact:
 - **Platform**: x86 / amd64 (supports both virtual machines and physical machines)
 - **Boot Modes**: UEFI & Legacy BIOS
 - **Custom builds**: For other architecture customization, please contact [Telegram](https://t.me/Jackchuanzhang01)
-- **Cloud Management**: Supported — [https://cloud.router-x.top](https://cloud.router-x.top)
 
 ---
 
