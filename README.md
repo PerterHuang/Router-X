@@ -4,7 +4,20 @@
 
 RouterX is an enterprise-grade intelligent gateway system that provides an intuitive and easy-to-use web management interface with multilingual support (Simplified Chinese, Traditional Chinese, English). No professional networking knowledge required — easily manage enterprise, school, or complex network environments.
 
+> **Key Highlights**
+> 1. Professional cross-border e-commerce router stable version
+> 2. Supports mutual conversion between multiple VPN types
+> 3. Supports protocols: SOCKS, Shadowsocks, Trojan, Hysteria2, L2TP, WireGuard
+> 4. Supports one-click import and export
+> 5. Prevents DNS leaks, suitable for cross-border e-commerce network isolation
+
 ---
+
+## License
+
+This firmware is **free for personal use**. For commercial use, please contact:
+
+- **Telegram**: [@Jackchuanzhang01](https://t.me/Jackchuanzhang01)
 
 ## Core Features
 
@@ -199,7 +212,7 @@ RouterX is an enterprise-grade intelligent gateway system that provides an intui
   - Network usage monitoring
 
 ### Multi-WAN Environment
-  - Smart traffic分流 by application
+  - Smart traffic routing by application
   - Domestic/international traffic domain-based routing
   - Multi-protocol VPN networking
   - Centralized network device management
@@ -236,8 +249,3 @@ RouterX is an enterprise-grade intelligent gateway system that provides an intui
 
 ---
 
-## Contact
-
-- **Telegram**: [@Jackchuanzhang01](https://t.me/Jackchuanzhang01)
-
-For questions or suggestions, feel free to reach out via Telegram.
