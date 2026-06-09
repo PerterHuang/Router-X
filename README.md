@@ -1,244 +1,243 @@
-# RouterX 网关固件功能介绍
+# RouterX Gateway Firmware Features
 
-## 产品概述
+## Product Overview
 
-RouterX 是一款企业级智能网关系统，提供直观易用的 Web 管理界面，支持多语言（简体中文、繁体中文、English）。无需专业网络知识，即可轻松管理企业、学校或复杂网络环境。
-
----
-
-## 核心功能
-
-### 1. 网络设置
-
-#### 外网接入（WAN）
-  - 支持多种上网方式：自动获取 IP、固定 IP、宽带拨号（PPPoE）
-  - 多外网线路管理，可同时接入多条宽带
-  - 自定义 DNS 服务器设置
-  - 批量配置和导入导出功能
-
-#### 内网设置（LAN）
-  - 灵活的内网 IP 配置
-  - 支持多个内网网段
-  - DHCP 自动分配 IP 地址
-
-#### DHCP 服务
-  - 自动为设备分配 IP 地址
-  - 支持 IPv6 网络
-  - 租期时间可自定义
-  - IP 地址范围灵活设置
-
-#### VLAN 网络隔离
-  - 支持 VLAN 网络划分（1-4094 个网络 ID）
-  - 不同网络区域灵活配置
-  - 实现网络隔离和安全管控
-
-#### 路由管理
-  - 实时查看当前路由状态
-  - 自定义静态路由规则
-  - 设置路由优先级
-  - 灵活控制数据流向
+RouterX is an enterprise-grade intelligent gateway system that provides an intuitive and easy-to-use web management interface with multilingual support (Simplified Chinese, Traditional Chinese, English). No professional networking knowledge required — easily manage enterprise, school, or complex network environments.
 
 ---
 
-### 2. VPN 组网
+## Core Features
 
-#### VPN 客户端（支持 6 种协议）
-  - **Socks5 代理**：快速代理配置
-  - **Shadowsocks**：科学上网协议
-  - **Trojan**：隐蔽性强的代理协议
-  - **Hysteria2**：高速 UDP 加速协议
-  - **L2TP**：传统稳定的 VPN 协议
-  - **WireGuard**：新一代高效 VPN 协议
+### 1. Network Settings
 
-**便捷功能：**
-  - 批量添加、删除、测试配置
-  - 一键导入导出配置
-  - 实时测试连接状态和延迟
-  - 支持配置文件上传
+#### WAN Connection
+  - Multiple internet access methods: Auto IP, Static IP, PPPoE
+  - Multi-WAN management, supporting multiple broadband connections simultaneously
+  - Custom DNS server settings
+  - Batch configuration with import/export support
 
-#### VPN 服务器（可选配置）
-  - 搭建企业内部 VPN 服务器
-  - 支持远程办公接入
-  - 多种 VPN 协议可选
+#### LAN Settings
+  - Flexible LAN IP configuration
+  - Support for multiple LAN subnets
+  - DHCP auto-assignment of IP addresses
 
----
+#### DHCP Service
+  - Automatic IP address assignment
+  - IPv6 support
+  - Customizable lease time
+  - Flexible IP range settings
 
-### 3. 智能分流与限速
+#### VLAN Network Isolation
+  - VLAN partitioning support (1-4094 network IDs)
+  - Flexible network zone configuration
+  - Network isolation and security control
 
-#### 端口分流
-  - 按源地址/目的地址/端口精准分流
-  - 支持 TCP、UDP、ICMP 等协议
-  - 指定流量走指定线路
-  - 支持按星期和时间段生效
-  - 分组成员批量管理
-  - 批量导入导出配置
-
-#### 域名分流
-  - 指定域名走特定线路
-  - 支持导入域名列表
-  - 自定义 DNS 解析服务器
-  - 智能分流国内外流量
-
-#### 带宽限速
-  - 创建限速模板，灵活管理
-  - 支持按 IP 地址限速
-  - 支持按端口限速
-  - 支持按 MAC 地址限速
-  - 分别设置上行和下行速度
-  - 成员统一管理，共享限速规则
+#### Route Management
+  - Real-time routing table display
+  - Custom static route rules
+  - Route priority configuration
+  - Flexible traffic direction control
 
 ---
 
-### 4. 实时监控
+### 2. VPN Networking
 
-#### 线路监控
-  - 实时显示各线路流量
-  - 线路连接状态一目了然
-  - 历史流量数据查看
+#### VPN Clients (6 Protocols Supported)
+  - **Socks5 Proxy**: Fast proxy configuration
+  - **Shadowsocks**: Secure tunneling protocol
+  - **Trojan**: Highly stealthy proxy protocol
+  - **Hysteria2**: High-speed UDP acceleration protocol
+  - **L2TP**: Traditional stable VPN protocol
+  - **WireGuard**: Next-generation high-efficiency VPN protocol
 
-#### 终端设备监控
-  - 查看所有联网设备
-  - 显示设备在线/离线状态
-  - 每台设备的实时网速
-  - 累计流量统计
-  - 设备连接数统计
-  - 搜索功能：按 IP 或 MAC 地址快速查找
+**Convenient Features:**
+  - Batch add, delete, and test configurations
+  - One-click configuration import/export
+  - Real-time connection status and latency testing
+  - Configuration file upload support
 
-#### 连接详情
-  - 实时查看所有网络连接
-  - 显示源地址、目标地址、端口
-  - TCP 连接状态（已建立/等待中/已关闭等）
-  - 实时流量统计
-  - 网络资源占用排行（按连接数/流量）
-  - 多条件筛选查询
+#### VPN Server (Optional)
+  - Set up enterprise VPN server
+  - Remote office access support
+  - Multiple VPN protocols available
 
 ---
 
-### 5. 系统管理
+### 3. Smart分流 & Bandwidth Limiting
 
-#### 设备模式切换
-  - **主路由模式**：作为主路由器使用
-  - **旁路由模式**：配合主路由使用，提供额外功能
-  - **AP 模式**：作为无线接入点使用
+#### Port-based分流
+  - Precise分流 by source/destination address and port
+  - TCP, UDP, ICMP protocol support
+  - Route specific traffic through designated WAN interfaces
+  - Schedule-based activation by day of week and time range
+  - Batch group member management
+  - Batch import/export configuration
 
-#### 系统升级
-  - 在线升级固件
-  - 升级前自动备份配置
-  - 支持保留配置升级
+#### Domain-based分流
+  - Route specific domains through designated WAN interfaces
+  - Domain list import support
+  - Custom DNS resolver
+  - Smart domestic/international traffic分流
 
-#### 备份与恢复
-  - 一键备份当前配置
-  - 下载备份文件到本地
-  - 上传备份文件恢复配置
-  - 备份文件管理（删除/重新下载）
-
-#### 设备维护
-  - 远程重启设备
-  - 恢复出厂设置
-  - 查看设备运行时间
-
----
-
-### 6. 运维工具
-
-#### 网页终端
-  - 无需安装任何软件
-  - 打开浏览器即可访问命令行
-  - 完整的管理员权限
-
-#### 技术支持
-  - 在线提交问题反馈
-  - 技术支持工单系统
+#### Bandwidth Limiting
+  - Create flexible QoS templates
+  - IP-based bandwidth limiting
+  - Port-based bandwidth limiting
+  - MAC-based bandwidth limiting
+  - Separate upload/download speed limits
+  - Unified member management with shared rate limiting rules
 
 ---
 
-### 7. 首页仪表盘
+### 4. Real-time Monitoring
 
-#### 系统信息概览
-  - 设备型号和固件版本
-  - 设备运行时长
-  - 当前工作模式
+#### Interface Monitoring
+  - Real-time traffic display per interface
+  - Clear connection status visibility
+  - Historical traffic data viewing
 
-#### 性能监控
-  - CPU 使用率实时显示
-  - 内存使用情况
-  - 刷新频率可选（1 秒/3 秒/5 秒）
+#### Device Monitoring
+  - View all connected devices
+  - Online/offline status display
+  - Real-time speed per device
+  - Cumulative traffic statistics
+  - Connection count per device
+  - Search by IP or MAC address
 
-#### 网络状态
-  - 实时网速（下载/上传）
-  - 网速峰值记录
-  - 有线/无线/VPN 连接数统计
-  - 历史最大连接数
-
-#### 接口状态
-  - WAN/LAN接口状态
-  - IP 地址、子网掩码、网关信息
-  - DNS 服务器信息
-  - 累计上传/下载流量
-  - 网络质量检测
-
-#### 云服务（可选）
-  - 绑定云端管理平台
-  - 支持账号绑定或扫码绑定
-  - 查看公网 IP 地址和运营商信息
+#### Connection Details
+  - View all active network connections in real time
+  - Source/destination address and port display
+  - TCP connection states (established/waiting/closed, etc.)
+  - Real-time traffic statistics
+  - Network resource usage ranking (by connections/traffic)
+  - Multi-condition filtering
 
 ---
 
-## 应用场景
+### 5. System Management
 
-### 企业网络
-  - 多条宽带同时接入，提升网络稳定性
-  - 划分不同部门网络，实现安全隔离
-  - 限制各部门带宽，保障关键业务
-  - 搭建 VPN，支持员工远程办公
+#### Device Mode Switching
+  - **Router Mode**: Function as primary router
+  - **Gateway Mode**: Work alongside primary router, providing additional features
+  - **AP Mode**: Function as wireless access point
 
-### 学校/教育机构
-  - 划分教学区、办公区、宿舍区网络
-  - 学生网络和教师网络隔离
-  - 限制特定应用的带宽使用
-  - 监控网络使用情况
+#### System Upgrade
+  - Online firmware upgrade
+  - Automatic configuration backup before upgrade
+  - Upgrade with or without preserving configuration
 
-### 多线路环境
-  - 智能分流，指定应用走指定线路
-  - 域名分流，国内外流量智能切换
-  - 多协议 VPN 组网，灵活选择
-  - 集中管理所有网络设备
+#### Backup & Restore
+  - One-click configuration backup
+  - Download backup files locally
+  - Upload backup files to restore configuration
+  - Backup file management (delete/re-download)
+
+#### Device Maintenance
+  - Remote device reboot
+  - Factory reset
+  - Device uptime display
 
 ---
 
-## 产品特点
+### 6. Operational Tools
 
-### 易用性
-  - 直观的 Web 图形界面
-  - 清晰的功能分类和导航
-  - 批量操作，提高效率
-  - 支持配置导入导出
+#### Web Terminal
+  - No software installation required
+  - Access command line from browser
+  - Full administrator privileges
 
-### 多语言支持
-  - 简体中文
-  - 繁体中文
+#### Technical Support
+  - Submit feedback online
+  - Technical support ticket system
+
+---
+
+### 7. Dashboard
+
+#### System Information Overview
+  - Device model and firmware version
+  - Device uptime
+  - Current working mode
+
+#### Performance Monitoring
+  - Real-time CPU usage display
+  - Memory usage status
+  - Refresh interval options (1s/3s/5s)
+
+#### Network Status
+  - Real-time speed (download/upload)
+  - Peak speed records
+  - Wired/wireless/VPN connection count
+  - Historical maximum connections
+
+#### Interface Status
+  - WAN/LAN interface status
+  - IP address, subnet mask, gateway info
+  - DNS server information
+  - Cumulative upload/download traffic
+  - Network quality probe
+
+#### Cloud Service (Optional)
+  - Bind to cloud management platform
+  - Account login or QR code binding
+  - Public IP and ISP information display
+
+---
+
+## Application Scenarios
+
+### Enterprise Network
+  - Multi-WAN aggregation for network stability
+  - Department-level network segmentation
+  - Department bandwidth management for critical services
+  - VPN setup for remote employee access
+
+### School/Educational Institution
+  - Teaching, office, and dormitory network zones
+  - Faculty and student network isolation
+  - Application-specific bandwidth restrictions
+  - Network usage monitoring
+
+### Multi-WAN Environment
+  - Smart traffic分流 by application
+  - Domestic/international traffic domain-based routing
+  - Multi-protocol VPN networking
+  - Centralized network device management
+
+---
+
+## Product Highlights
+
+### Ease of Use
+  - Intuitive web GUI
+  - Clear function categories and navigation
+  - Batch operations for efficiency
+  - Configuration import/export support
+
+### Multilingual Support
+  - Simplified Chinese
+  - Traditional Chinese
   - English
 
-### 主题切换
-  - 亮色主题
-  - 暗色主题
+### Theme Switching
+  - Light theme
+  - Dark theme
 
-### 响应式设计
-  - 自适应电脑、平板、手机屏幕
-  - 卡片式布局，信息清晰
-
----
-
-## 版本信息
-
-- **产品名称**：RouterX
-- **版本**：v1.0.0
+### Responsive Design
+  - Adaptive to desktop, tablet, and mobile screens
+  - Card-based layout for clear information display
 
 ---
 
-## 联系我们
+## Version Info
 
-如有问题或建议，欢迎通过以下方式反馈：
-- 提交问题反馈
-- 联系技术支持
-- 查阅帮助文档
+- **Product Name**: RouterX
+- **Version**: v1.0.0
+
+---
+
+## Contact
+
+- **Telegram**: [@Jackchuanzhang01](https://t.me/Jackchuanzhang01)
+
+For questions or suggestions, feel free to reach out via Telegram.
