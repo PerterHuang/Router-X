@@ -63,21 +63,21 @@ RouterX is an enterprise-grade intelligent gateway system that provides an intui
 
 ---
 
-### 3. Smart分流 & Bandwidth Limiting
+### 3. Traffic Steering & Bandwidth Limiting
 
-#### Port-based分流
-  - Precise分流 by source/destination address and port
+#### Port-based Traffic Steering
+  - Precise routing by source/destination address and port
   - TCP, UDP, ICMP protocol support
   - Route specific traffic through designated WAN interfaces
   - Schedule-based activation by day of week and time range
   - Batch group member management
   - Batch import/export configuration
 
-#### Domain-based分流
+#### Domain-based Traffic Steering
   - Route specific domains through designated WAN interfaces
   - Domain list import support
   - Custom DNS resolver
-  - Smart domestic/international traffic分流
+  - Smart domestic/international traffic routing
 
 #### Bandwidth Limiting
   - Create flexible QoS templates
