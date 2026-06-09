@@ -228,7 +228,6 @@ This firmware is **free for personal use**. For commercial use, please contact:
   - Configuration import/export support
 
 ### Multilingual Support
-  - Simplified Chinese
   - Traditional Chinese
   - English
 
