@@ -248,6 +248,7 @@ This firmware is **free for personal use**. For commercial use, please contact:
 - **Platform**: x86 / amd64 (supports both virtual machines and physical machines)
 - **Boot Modes**: UEFI & Legacy BIOS
 - **Custom builds**: For other architecture customization, please contact [Telegram](https://t.me/Jackchuanzhang01)
+- **Cloud Management**: Supported — [https://cloud.router-x.top](https://cloud.router-x.top)
 
 ---
 
