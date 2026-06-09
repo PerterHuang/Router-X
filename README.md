@@ -244,7 +244,9 @@ This firmware is **free for personal use**. For commercial use, please contact:
 ## Version Info
 
 - **Product Name**: RouterX
-- **Version**: v1.0.0
+- **Version**: v1.0.13
+- **Platform**: x86 / amd64 (supports both virtual machines and physical machines)
+- **Boot Modes**: UEFI & Legacy BIOS
 
 ---
 
