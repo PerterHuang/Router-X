@@ -20,6 +20,10 @@ This firmware is **free for personal use**. For commercial use, please contact:
 
 - **Telegram**: [@Jackchuanzhang01](https://t.me/Jackchuanzhang01)
 
+**Personal version limits:**
+- Maximum concurrent connections: 2048
+- Recommended for 3-4 simultaneous users
+
 ## Core Features
 
 ### 1. Network Settings
