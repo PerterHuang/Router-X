@@ -2,7 +2,7 @@
 
 ## Product Overview
 
-RouterX is an enterprise-grade intelligent gateway system that provides an intuitive and easy-to-use web management interface with multilingual support (Simplified Chinese, Traditional Chinese, English). No professional networking knowledge required — easily manage enterprise, school, or complex network environments.
+RouterX is an enterprise-grade intelligent gateway system that provides an intuitive and easy-to-use web management interface with multilingual support (Traditional Chinese, English). No professional networking knowledge required — easily manage enterprise, school, or complex network environments.
 
 > **Key Highlights**
 > 1. Professional cross-border e-commerce router stable version
